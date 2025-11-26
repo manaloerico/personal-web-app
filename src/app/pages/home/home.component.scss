@@ -1,0 +1,19 @@
+.hero {
+    padding: 8rem 2rem;
+    text-align: center;
+
+    span {
+        color: var(--accent);
+    }
+
+    .cta {
+        margin-top: 2rem;
+        display: inline-block;
+        padding: .8rem 1.5rem;
+        background: var(--accent);
+        color: black;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

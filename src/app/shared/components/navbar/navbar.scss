@@ -1,0 +1,40 @@
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .logo {
+        font-family: monospace;
+        font-size: 1.5rem;
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .links {
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color .3s;
+
+            &:hover {
+                color: var(--accent);
+            }
+        }
+    }
+
+    .theme-btn {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: var(--accent);
+    }
+}

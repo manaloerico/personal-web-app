@@ -1,0 +1,15 @@
+<section class="projects" @projectStagger>
+    <h1>Projects</h1>
+
+    <div class="project-grid">
+        <div class="project-card" *ngFor="let project of projects">
+            <h2>{{ project.name }}</h2>
+            <p>{{ project.description }}</p>
+            <p><strong>Tech:</strong> {{ project.tech.join(', ') }}</p>
+            <div class="links">
+                <a [href]="project.demo" target="_blank">Live Demo</a>
+                <a [href]="project.repo" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>

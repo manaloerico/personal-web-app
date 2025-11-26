@@ -1,0 +1,43 @@
+.projects {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h1 {
+        color: var(--accent);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        background: var(--card);
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .links {
+            margin-top: 1rem;
+
+            a {
+                margin-right: 1rem;
+                text-decoration: none;
+                color: var(--accent);
+            }
+        }
+    }
+}

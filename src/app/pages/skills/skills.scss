@@ -1,0 +1,30 @@
+.skills {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+
+    h1 {
+        color: var(--accent);
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    li {
+        background: var(--card);
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        font-family: monospace;
+    }
+}
