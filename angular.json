@@ -34,6 +34,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://manaloerico.github.io/personal-web-app/",
               "budgets": [
                 {
                   "type": "initial",
