@@ -1,7 +1,23 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 
-<main>
-  <router-outlet></router-outlet>
+
+<main class="page">
+  <div class="page__left">
+    <div class="page__top-left">
+      <div class="page__hero-section">
+        <h1>Echo Manalo</h1>
+        <h2>Angular Front End Engineer</h2>
+        <p>I create intuitive, responsive front-end applications with clean, maintainable Angular code and a focus on
+          user
+          experience.</p>
+      </div>
+      <app-navbar orientation="vertical"></app-navbar>
+    </div>
+    <app-footer></app-footer>
+  </div>
+  <div class="page__right">
+
+    <router-outlet></router-outlet>
+  </div>
+
 </main>
-
-<app-footer></app-footer>

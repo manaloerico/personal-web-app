@@ -1,11 +1,17 @@
-<section class="projects" @projectStagger>
+<section class="projects" @projectStagger @fadeIn>
     <h1>Projects</h1>
 
     <div class="project-grid">
         <div class="project-card" *ngFor="let project of projects">
-            <h2>{{ project.name }}</h2>
+            <h3>{{ project.name }}</h3>
             <p>{{ project.description }}</p>
-            <p><strong>Tech:</strong> {{ project.tech.join(', ') }}</p>
+            <div class="tech-contaner">
+                <ng-container *ngFor="let t of project.tech">
+                    <span class="pill">
+                        {{t}}
+                    </span>
+                </ng-container>
+            </div>
             <div class="links">
                 <a [href]="project.demo" target="_blank">Live Demo</a>
                 <a [href]="project.repo" target="_blank">GitHub</a>

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { PortfolioDataService } from '../../core/services/portfolio-data/portfolio-data';
+import { fadeIn } from '../../shared/animations/fade-in/fade-in.animate';
 import { listStagger } from '../../shared/animations/list-stagger/list-stagger.animate';
 
 @Component({
@@ -8,7 +9,7 @@ import { listStagger } from '../../shared/animations/list-stagger/list-stagger.a
   imports: [CommonModule],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
-  animations: [listStagger],
+  animations: [listStagger, fadeIn],
 })
 export class SkillsComponent {
   private readonly dataService = inject(PortfolioDataService);

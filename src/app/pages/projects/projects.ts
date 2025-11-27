@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { PortfolioDataService } from '../../core/services/portfolio-data/portfolio-data';
+import { fadeIn } from '../../shared/animations/fade-in/fade-in.animate';
 import { projectStagger } from '../../shared/animations/project-stagger/project-stagger.animate';
 
 @Component({
@@ -8,7 +9,7 @@ import { projectStagger } from '../../shared/animations/project-stagger/project-
   imports: [CommonModule],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
-  animations: [projectStagger],
+  animations: [projectStagger, fadeIn],
 })
 export class ProjectsComponent {
   constructor() {}
