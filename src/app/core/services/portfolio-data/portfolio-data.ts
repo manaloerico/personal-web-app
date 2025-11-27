@@ -4,11 +4,10 @@ import { Injectable } from '@angular/core';
 export class PortfolioDataService {
   getPersonalInfo() {
     return {
-      name: 'Alex Carter',
-      title: 'Senior Angular Frontend Developer',
-      bio: `I'm a frontend engineer specializing in Angular and modern web application architecture. 
-            I design clean, scalable, and high-performance interfaces.`,
-      location: 'Berlin, Germany',
+      name: 'Echo Manalo',
+      title: 'Angular Frontend Developer',
+      bio: `Lorem ipsum dolor sit amet. Qui distinctio laudantium qui omnis vero quo sunt beatae est soluta ipsa aut dolorem accusantium ut illo cupiditate qui voluptas quas.`,
+      location: 'Manila,Philippines',
     };
   }
 
