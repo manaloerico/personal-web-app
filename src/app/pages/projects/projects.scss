@@ -26,7 +26,6 @@
         background-color: var(--card-bg);
         border: 2px solid transparent;
 
-
         &:hover {
             transform: translateY(-5px);
             background: var(--card-bg-hover);
@@ -67,7 +66,6 @@
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         font-size: 0.8rem;
-
         line-height: 1.25rem;
         font-weight: 500;
     }

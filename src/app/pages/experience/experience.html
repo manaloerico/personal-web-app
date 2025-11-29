@@ -1,0 +1,44 @@
+<section class="experience" @fadeIn>
+    <ul class="group">
+
+        @for (item of experienceData; track item.company) {
+        <li class="mb-12">
+            <div class="relative cursor-pointer w-full p-4 rounded-lg transition-all duration-300 
+             hover:bg-slate-800/70 hover:shadow-lg hover:shadow-slate-800/50
+             group-hover:opacity-50 lg:group-hover:opacity-50 lg:hover:opacity-100">
+                <div class="flex flex-col mb-2">
+                    <div class="flex">
+                        <h1 class="text-2xl text-gray-100 font-bold">{{item.position}}</h1>
+                    </div>
+                    <div class="flex flex-row gap-2 font-normal">
+
+                        <h3 class="text-gray-500">{{item.company}}</h3><span>|</span>
+                        <h3 class="text-gray-500">{{ item.startDate }} - {{ item.endDate ||
+                            'Present'
+                            }}
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-2 text-sm/relaxed">{{item.description}}</p>
+
+
+                <ul class="mt-2 flex flex-wrap">
+                    @for (t of item.techStack; track t) {
+                    <li class="mr-1.5 mt-2">
+                        <app-pill [label]="t" class=""> </app-pill>
+                    </li>
+                    }
+                </ul>
+
+            </div>
+
+        </li>
+        } @empty {
+        <li>There are no items.</li>
+        }
+
+    </ul>
+</section>

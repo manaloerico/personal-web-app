@@ -1,4 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./tailwind.css";
+
+
+
 :root {
     --text: #CDD6E5;
     --accent: #E3EAF6;
@@ -7,7 +10,6 @@
     --bg: #0D1628;
     --pill-bg-color: #121C2F;
     --pill-bg-hover: #1A2742;
-    // --card-bg-hover: #24314C;
 
     --card-bg-hover: rgba(30, 41, 59, .5)
 }
@@ -23,39 +25,13 @@
     --secondary: #6A7A8A;
 }
 
-
-// :root {
-//   --bg-color: #FAFAFA;
-//   --text-primary: #2C3E50;
-//   --text-secondary: #7F8C8D;
-//   --accent-color: #2978B5;
-//   --highlight-color: #E67E22;
-//   --border-color: #DADFE1;
-//   --success-color: #27AE60;
-//   --error-color: #C0392B;
-// }
-
-/* Dark Theme */
-// [data-theme="dark"] {
-//   --bg-color: #1E1E2F;
-//   --text-primary: #E3E6F3;
-//   --text-secondary: #A3A8C4;
-//   --accent-color: #5AA9E6;
-//   --highlight-color: #F5A962;
-//   --border-color: #3C4063;
-//   --success-color: #6BD47E;
-//   --error-color: #E77979;
-// }
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background: var(--bg);
-    color: var(--text);
-    // font-family: 'Inter', sans-serif;
-    font-family: 'Inter', 'Segoe UI';
+    // color: var(--text);
     margin: 0;
 }
 
