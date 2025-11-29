@@ -36,7 +36,7 @@ export class App implements OnInit {
     this.currentY += (this.mouseY - this.currentY) * this.speed;
     highlight.style.background = `
       radial-gradient(600px at ${this.currentX}px ${this.currentY}px,
-      rgba(29, 78, 216, 0.15),
+     rgba(179, 184, 197, 0.15),
       transparent 80%)
     `;
     requestAnimationFrame(() => this.animate(highlight));

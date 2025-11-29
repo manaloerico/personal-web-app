@@ -7,7 +7,7 @@
     --accent: #E3EAF6;
     --secondary: #A3A8C4;
     --card: #2f2f31;
-    --bg: #0D1628;
+    --bg: #101414;
     --pill-bg-color: #121C2F;
     --pill-bg-hover: #1A2742;
 
@@ -62,7 +62,7 @@ h1 {
     pointer-events: none;
     z-index: 0;
     background: radial-gradient(600px at 50% 50%,
-            rgba(29, 78, 216, 0.15),
+            rgba(179, 184, 197, 0.15),
             transparent 80%);
     transition: background 0.1s linear;
 }

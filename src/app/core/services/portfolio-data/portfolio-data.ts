@@ -31,34 +31,49 @@ export class PortfolioDataService {
   getProjects() {
     return [
       {
-        name: 'Insight Dashboard',
+        name: 'TMDB Movie Web App',
         description:
-          'A real-time analytics dashboard with dynamic charts, live metrics and role-based UI.',
-        tech: ['Angular', 'RxJS', 'NgRx', 'Chart.js'],
-        demo: 'https://demo.insight-dashboard.dev',
+          'Browse, discover, and dive into movies using live data from The Movie Database (TMDB) API. See now playing films in a carousel, explore popular, top-rated, and upcoming titles, and check full details and cast for each movie. Sleek, interactive, and perfect for film lovers.',
+        tech: [
+          'Angular',
+          'RxJS',
+          'NgRx',
+          'Angular Material',
+          'TMDB API',
+          'Github',
+          'Github Pages',
+          ' Github Actions',
+        ],
+        demo: 'https://manaloerico.github.io/tmdb-movie-web-app/home',
         repo: 'https://github.com/mock/insight-dashboard',
       },
       {
-        name: 'TaskForge',
+        name: 'Metrics Dashboard Web App',
         description:
-          'A Trello-style task management platform with drag-and-drop and real-time updates.',
-        tech: ['Angular', 'Node.js', 'WebSockets'],
-        demo: 'https://taskforge.app',
+          'Track your personal goals and performance with a secure, interactive dashboard. Login with JWT authentication, view key metrics, explore detailed charts, and monitor streaks and historical trends. Built with Angular and a custom Chart.js library for reusable, data-driven visualizations.',
+        tech: [
+          'Angular',
+          'RxJS',
+          'NgRx',
+          'Angular Material',
+          'Github',
+          'Github Pages',
+          'Github Actions',
+          'NodeJs',
+          'JWT',
+          'ChartJs',
+          'MongoDB',
+        ],
+        demo: 'https://metrics-dashboard-theta.vercel.app/login',
         repo: 'https://github.com/mock/taskforge',
       },
       {
-        name: 'DevShelf',
-        description: 'Developer resource library with advanced search, filters, and bookmarking.',
-        tech: ['Angular', 'Firebase', 'TailwindCSS'],
-        demo: 'https://devshelf.io',
+        name: 'Maneric Charts',
+        description:
+          'An Angular TypeScript library extending Chart.js for building interactive, customizable charts. Seamlessly adapt to your app’s theme—whether your own, Angular Matrial’s, or the default—while creating visually dynamic and responsive data visualizations.',
+        tech: ['Angular', 'ChartsJs', 'Angular Material', 'SCSS', 'NPM'],
+        demo: 'https://www.npmjs.com/package/maneric-charts',
         repo: 'https://github.com/mock/devshelf',
-      },
-      {
-        name: 'Portfolio v3',
-        description: 'Previous version of portfolio with animations and theming system.',
-        tech: ['Angular', 'GSAP', 'SCSS'],
-        demo: 'https://alexcarter.dev',
-        repo: 'https://github.com/mock/portfolio-v3',
       },
     ];
   }
