@@ -1,13 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AboutComponent } from './pages/about/about';
+import { ExperiencePage } from './pages/experience/experience';
+import { ProjectsComponent } from './pages/projects/projects';
+import { ResumeComponent } from './pages/resume/resume';
 import { Footer } from './shared/components/footer/footer';
 import { Navbar } from './shared/components/navbar/navbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, Navbar, Footer],
+  imports: [
+    CommonModule,
+    Navbar,
+    Footer,
+    AboutComponent,
+    ExperiencePage,
+    ResumeComponent,
+    ProjectsComponent,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

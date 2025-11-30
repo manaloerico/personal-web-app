@@ -1,0 +1,22 @@
+@let isSectionActive =activeSection && activeSection === sectionName;
+<li class="py-3">
+  <a
+    class="relative pb-1 group"
+    [href]="`#${sectionName}`"
+    [class.active]="isSectionActive"
+    (click)="sectionClicked.emit(sectionName)"
+  >
+    <span
+      class="absolute left-0 bottom-0 h-px w-0 bg-cyan-300 transition-all duration-300 group-hover:w-full"
+      [class.w-full]="isSectionActive"
+    ></span>
+    <span
+      class="inline-block transform duration-300 group-hover:translate-x-1 transition-colors group-hover:text-white tracking-wider group-hover:tracking-widest active:text-white active:tracking-widest"
+      [class.text-white]="isSectionActive"
+      [class.tracking-widest]="isSectionActive"
+      [class.translate-x-1]="isSectionActive"
+    >
+      {{ label }}
+    </span>
+  </a>
+</li>

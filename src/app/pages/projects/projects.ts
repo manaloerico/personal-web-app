@@ -4,10 +4,11 @@ import { PortfolioDataService } from '../../core/services/portfolio-data/portfol
 import { fadeIn } from '../../shared/animations/fade-in/fade-in.animate';
 import { projectStagger } from '../../shared/animations/project-stagger/project-stagger.animate';
 import { PillComponent } from '../../shared/components/pill/pill';
+import { SectionContainer } from '../../shared/components/section-container/section-container';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule, PillComponent],
+  imports: [CommonModule, PillComponent, SectionContainer],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
   animations: [projectStagger, fadeIn],
