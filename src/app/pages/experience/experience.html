@@ -22,8 +22,6 @@
               <div>
                 <a
                   class="inline-flex items-baseline font-medium leading-tight text-neutral-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                  href="https://www.klaviyo.com"
-                  target="_blank"
                   rel="noreferrer noopener"
                   [attr.aria-label]=" `Apply for ${item.position} at ${item.company} (opens in a new tab)`"
                   ><span
@@ -41,10 +39,7 @@
               </div>
             </h3>
             <p class="mt-2 text-sm leading-normal">
-              Build and maintain critical components used to construct Klaviyo’s frontend, across
-              the whole product. Work closely with cross-functional teams, including developers,
-              designers, and product managers, to implement and advocate for best practices in web
-              accessibility.
+              {{ item.description }}
             </p>
             <ul class="mt-2 flex flex-wrap">
               @for (t of item.techStack; track t) {

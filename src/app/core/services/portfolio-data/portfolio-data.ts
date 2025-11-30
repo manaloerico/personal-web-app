@@ -6,7 +6,24 @@ export class PortfolioDataService {
     return {
       name: 'Echo Manalo',
       title: 'Angular Frontend Developer',
-      bio: `Lorem ipsum dolor sit amet. Qui distinctio laudantium qui omnis vero quo sunt beatae est soluta ipsa aut dolorem accusantium ut illo cupiditate qui voluptas quas.`,
+      bio: [
+        `I’m a Front-End Software Engineer passionate about building clean, responsive, and user-friendly interfaces. I specialize in 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Angular</a>, leveraging 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>TypeScript</a>, 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>NgRx<a>, and 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>SCSS</a> to create performant applications that delight users.`,
+        `Currently, I work at <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Manulife IT Delivery Center</a>, collaborating with cross-functional teams to deliver high-quality software throughout the full development lifecycle. I translate complex requirements into responsive interfaces, maintain shared code libraries, and help ensure every project is reliable and future-ready. Previously, I contributed to projects at Infor PSSC and Forever Rich Philippines, gaining experience in both front-end and full-stack development.`,
+        `Outside of work, I enjoy mobile games, movies, series, and anime, always exploring new stories and experiences that inspire my creativity—both in life and in code.`,
+        `I’m also actively building personal projects to experiment with new technologies, including 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>TMDB Movie Web App</a>, 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Metrics Dashboard</a>, and 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Maneric Charts</a>. These projects are in progress but showcase my focus on interactive, user-focused applications and continuous learning.`,
+        `While developing these, I’m exploring 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>GitHub Actions</a>, 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Node.js</a>,  
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>MongoDB</a>, and 
+        <a class='font-medium text-neutral-200 hover:text-cyan-300 focus-visible:text-cyan-300'>Firebase</a> to expand my full-stack capabilities and bring more dynamic features to my projects.`,
+      ],
       location: 'Manila,Philippines',
     };
   }

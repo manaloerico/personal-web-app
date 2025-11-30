@@ -1,11 +1,8 @@
 <app-section-container>
-    <div section-title>About</div>
-    <div section-body>
-        <p>{{ personalInfo.bio }}</p>
-
-        <div class="details">
-            <div><strong>Name:</strong> {{ personalInfo.name }}</div>
-            <div><strong>Title:</strong> {{ personalInfo.title }}</div>
-            <div><strong>Location:</strong> {{ personalInfo.location }}</div>
-        </div>
-    </div>
+  <div section-title>About</div>
+  <div section-body>
+    @for(b of personalInfo.bio; track b) {
+    <p class="mt-4" [innerHTML]="b"></p>
+    }
+  </div></app-section-container
+>
